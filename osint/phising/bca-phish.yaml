@@ -14,6 +14,7 @@ info:
 http:
   - method: GET
     path:
+      - "{{BaseURL}}"
       - "{{BaseURL}}/en"
 
     host-redirects: true
@@ -23,6 +24,7 @@ http:
     matchers:
       - type: word
         words:
+          - "BCA - Senantiasa di sisi Anda"
           - "BCA - Always by your side"
 
       - type: status
