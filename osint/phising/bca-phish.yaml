@@ -15,7 +15,6 @@ http:
   - method: GET
     path:
       - "{{BaseURL}}"
-      - "{{BaseURL}}/en"
 
     host-redirects: true
     max-redirects: 2
