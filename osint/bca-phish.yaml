@@ -1,0 +1,35 @@
+id: bca-phish
+
+info:
+  name: BCA Phishing Detection
+  author: bocgoInfosec
+  severity: info
+  description: |
+    A Bank Central Asia (BCA) phishing website was detected
+  reference:
+    - https://bca.co.id
+  metadata:
+    max-request: 1
+  tags: phishing,bca,osint
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/en"
+
+    host-redirects: true
+    max-redirects: 2
+
+    matchers-condition: and
+    matchers:
+      - type: word
+        words:
+          - "BCA - Always by your side"
+
+      - type: status
+        status:
+          - 200
+
+      - type: dsl
+        dsl:
+          - '!contains(host,"bca.co.id")'
+
