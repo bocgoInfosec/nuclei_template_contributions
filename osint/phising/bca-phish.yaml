@@ -1,7 +1,7 @@
-id: bca-phish
+id: bank-central-asia-phish
 
 info:
-  name: BCA Phishing Detection
+  name: Bank Central Asia Phishing Detection
   author: bocgoInfosec
   severity: info
   description: |
@@ -24,23 +24,10 @@ http:
       - type: word
         words:
           - "BCA - Senantiasa di sisi Anda"
-          - "BCA - Daftar Asuransi"
-          - "BCA - Daftar Autopay"
-          - "BCA E-Form Kartu Kredit"
-          - "Apply Kredit Usaha Rakyat"
-          - "Apply Kredit Usaha"
-          - "REGISTRASI API BCA"
-          - "Formulir Pengajuan KSM"
           - "BCA - Always by your side"
           - "myBCA"
-          - "Promo BCA - BCA"
-          - "BCA - Webform BCA"
-          - "BCA - AIA Leave Contact"
           - "Login"
-          - "Whistleblowing System BCA"
-          - "Tracking Firecash BCA"
-          - "Reward BCA"
-          - "Tracking KPR"
+          - "BCA"
 
       - type: status
         status:
